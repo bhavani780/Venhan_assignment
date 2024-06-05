@@ -1,1 +1,64 @@
 
+*PYTHON*
+1.
+Input: 7
+Output: True
+
+def is_prime(n):
+    factor = 0
+    for i in range(2,n-1):
+        if (n%i) == 0:
+            factor = factor + 1
+            
+    if factor == 0:
+        print(True)
+    else:
+        print(False)
+
+n = int(input())
+is_prime(n)
+    
+2.
+Input: Booklet
+Output: telkooB
+
+def reverse_string(str_1):
+    reverse_str = ""
+    for i in str_1:
+        reverse_str = i + reverse_str
+    print(reverse_str)
+    
+    
+str_1 = input()
+reverse_string(str_1)
+
+3.
+Input: 1 2 3 4 5
+Output: 55 
+
+def sum_of_squares(list_1):
+    sum_of_squares_list = 0
+    for i in list_1:
+        square = i ** 2
+        sum_of_squares_list += square 
+    print(sum_of_squares_list)
+    
+
+list_1 = list(map(int,input().split()))
+sum_of_squares(list_1)
+
+4. 
+Input: snippet
+Output: {s:1,n:1,p:2,e:1,t:1}
+
+str_1 = input()
+dict_a = {}
+
+for i in str_1:
+    if i in dict_a:
+        continue
+    count = str_1.count(i)
+    letter = i 
+    dict_a[letter] = str(count)
+    
+print(dict_a)
