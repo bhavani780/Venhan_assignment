@@ -2,5 +2,17 @@
 9.SQL Basics
  Write a SQL query to create a table `students` with columns `id`,`name`, and `grade`.
 
+CREATE TABLE students (
+  id INTEGER,
+  name STRING,
+  grade FLOAT
+);
+
 10.Basic Database Operations 
   Write a Python function `insert_student(name:str,grade:float)`that inserts a new student into the `students` table using SQLite.
+
+INSERT INTO
+  students(id, name, grade)
+VALUES
+  (1, "Bavish", 7.7),
+  (2, "Bavith", 8.0);
