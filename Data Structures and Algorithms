@@ -1,0 +1,35 @@
+
+*Data Structures and Algorithms
+
+12. Write a function `merge_sort(arr: List[int]) -> List[int]` that implements the merge sort  algorithm. 
+
+13. Implement a function `find_duplicates(arr: List[int]) -> List[int]` that returns a list of  duplicate elements in the input list. 
+
+def find_duplicates(list_1):
+    duplicate_list = []
+    for i in list_1:
+        number_count = list_1.count(i)
+        if number_count >= 2:
+            if i not in duplicate_list:
+                duplicate_list.append(i)
+            
+    print(duplicate_list)
+    
+list_1 = list(map(int,input().split()))
+find_duplicates(list_1)
+
+
+14.Write a function `is_palindrome(s: str) -> bool` to check if a given string is a  palindrome (reads the same forward and backward). 
+
+def is_palindrome(str_1):
+    reverse_str = str_1[::-1]
+    if reverse_str == str_1:
+        print(True)
+    else:
+        print(False)
+    
+str_1 = input()
+is_palindrome(str_1)
+
+
+
