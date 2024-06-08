@@ -18,4 +18,32 @@ Class Book:
 book_obj = Book("The Power of Your Sub Conscious Mind","Joseph Murphy",232) 
 book_obj.about_book()
 
-  
+19.Create a class `Rectangle` with the following attributes and methods:
+*Attributes: length,width 
+*Methods:
+ *`__init__(self,length:float,width:float)`:Constructor to initialize the attributes.
+ *`area(self)->float` :Method to calculate the area of the rectangle.
+ *`perimeter(self)->float` :Method to calculate the perimeter of the rectangle.
+
+
+class Rectangle:
+    def __init__(self,length,width):
+        self.length = length
+        self.width = width 
+
+    def area_of_rectangle(self):
+        # Area of Rectangle = length * width
+        area = (self.length*self.width) 
+        print(round(area,2))
+        
+    
+    def perimeter_of_rectangle(self):
+        # Perimeter of Recatngle = 2(length + width)
+        perimeter = (2*(self.length+self.width))
+        print(round(perimeter,2))
+        
+rectangle_obj = Rectangle(2.3,4.1)
+rectangle_obj.area_of_rectangle()
+rectangle_obj.perimeter_of_rectangle()
+
+
