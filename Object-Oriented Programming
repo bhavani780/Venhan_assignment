@@ -87,8 +87,9 @@ user.deposit(1000)
 user.withdraw(100)
 
 
-21.
-
+21.Inheritance and Polymorphism
+Create a class hierarchy for `Shape`,`Circle`,and `Rectangle`.The base class Shape should have methods to calculate area and perimeter,
+which are overridden in the derived classes `Circle` and `Rectangle`.
 
 
 class Shape:
