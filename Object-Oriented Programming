@@ -145,4 +145,32 @@ Write a class `Employee` with class methods to keep track of the number of emplo
 and static methods to validate employee ID format (e.g., must be a string of digits).
 
 
+class Employee:
+    employees_count = 0
+    
+    def __init__(self, id, name):
+        self.id = id
+        self.name = name
+        Employee.employees_count += 1
+    
+    @classmethod
+    def get_total_employees(cls):
+        print(cls.employees_count)
+    
+    @staticmethod
+    def validate_employee_id(id):
+        if isinstance(id, str) and id.isdigit():
+            print(True)
+        print(False)
+
+
+employee1 = Employee("101", "Vahini")
+employee2 = Employee("102", "Umika")
+employee3 = Employee("103", "Shouri")
+employee4 = Employee("104", "Tanmahi")
+
+Employee.get_total_employees() 
+Employee.validate_employee_id("101") 
+Employee.validate_employee_id("ABC") 
+Employee.validate_employee_id(123)   
 
