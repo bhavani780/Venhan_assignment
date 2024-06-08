@@ -1,1 +1,21 @@
 
+18. Create a class Book with the following attributes and methods:
+   *Attributes: `title`,`author`,`pages`
+   *Methods: 
+     *`__init__(self,title:str,author:str,pages:int)`:Constructor to initialize the attributes.
+     *`__str__(self)->str:Method to return a string representation of the book.
+
+Class Book:
+    def __init__(self,title,author,pages):
+        self.title = title
+        self.author = author 
+        self.pages = pages 
+
+
+    def about_book(self):
+        print(This Book has {} pages".format(self.pages))
+
+book_obj = Book("The Power of Your Sub Conscious Mind","Joseph Murphy",232) 
+book_obj.about_book()
+
+  
