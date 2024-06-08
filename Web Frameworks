@@ -1,1 +1,9 @@
 
+*Web Frameworks*
+
+5.Django Basics 
+  Write a simple Django view function `hello_world` that returns an HTTP response with the text "Hello, World!".
+
+
+6.Flask Basics 
+  Write a basic Flask application with a single route `/` that returns the text "Welcome to Flask!".
